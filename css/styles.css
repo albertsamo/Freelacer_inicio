@@ -168,7 +168,7 @@ h1,h2,h3 {
 
 /*servicios*/
 
-}
+
 @media (min-width: 768px) {
     .servicios{
     display: grid;
@@ -263,4 +263,31 @@ border-radius: .5rem;
 /*footer*/
 .footer {
     text-align: center;
+}
+
+/*Clientes*/
+.clientes {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+}
+
+.cliente__tarjeta {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: auto;
+}
+
+.cliente__titulo {
+    color: var(--blanco);
+}
+
+.cliente__imagen {
+width: 90%;
+height: 500px;
+border-radius: 2rem;
 }
